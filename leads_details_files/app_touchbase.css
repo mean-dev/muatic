@@ -1,0 +1,61 @@
+.btn-webmail{
+    line-height: 30px !important;
+    margin-top: 14px;
+    color: #fff !important;
+}
+
+.btn-webmail:hover,
+.btn-webmail:active,
+.btn-webmail:focus{
+    color: inherit !important;
+}
+
+.mautic-brand{
+    padding-left: 0;
+    padding-right: 0;
+}
+.mautic-logo-figure{
+    display: none;
+}
+.mautic-logo-text {
+    display: none;
+}
+
+.touch-base-logo-text {
+    position: relative;
+    display: block;
+    max-width: 100%;
+    top: 50%;
+    -moz-transform: translatey(-50%);
+    -ms-transform: translatey(-50%);
+    -o-transform: translatey(-50%);
+    -webkit-transform: translatey(-50%);
+    transform: translatey(-50%);
+}
+
+html.sidebar-minimized .touch-base-logo-text{
+    display: none;
+}
+
+.touch-base-logo-figure {
+    display: none;
+    width: 32px;
+    position: relative;
+    top: 50%;
+    -moz-transform: translatey(-50%);
+    -ms-transform: translatey(-50%);
+    -o-transform: translatey(-50%);
+    -webkit-transform: translatey(-50%);
+    transform: translatey(-50%);
+}
+
+html.sidebar-minimized .touch-base-logo-figure{
+    display: block;
+}
+
+.login-page-logo{
+    position: relative;
+    display: block;
+    max-width: 100%;
+    margin: 40px auto 50px;
+}
