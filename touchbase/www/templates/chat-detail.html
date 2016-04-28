@@ -1,14 +1,154 @@
-<!--
-  This template loads for the 'tab.friend-detail' state (app.js)
-  'friend' is a $scope variable created in the FriendsCtrl controller (controllers.js)
-  The FriendsCtrl pulls data from the Friends service (service.js)
-  The Friends service returns an array of friend data
--->
-<ion-view view-title="{{chat.name}}">
-  <ion-content class="padding">
-    <img ng-src="{{chat.face}}" style="width: 64px; height: 64px">
-    <p>
-      {{chat.lastText}}
-    </p>
-  </ion-content>
+<!-- (*) assigned classes -->
+
+<ion-view view-title="Chat Detail">
+    <ion-content class="padding" start-y="430">
+        <!-- *messages / content messages -->
+        <ol class="messages">
+            <!-- *other / container other messages -->
+            <li class="other">
+                <!-- *avatar / avatar image -->
+                <div class="avatar">
+                    <img src="img/27.jpg">
+                </div>
+                <!-- *msg / messages -->
+                <div class="msg">
+                    <p>Do you like American TV?</p>
+                    <time>
+                        <i class="icon ion-ios-clock-outline"></i>
+                        20:17
+                    </time>     
+                </div>
+            </li>
+            <!-- *self / container self messages -->
+            <li class="self">
+                <!-- *avatar / avatar image -->
+                <div class="avatar">
+                    <img src="img/82.jpg">
+                </div>
+                <!-- *msg / messages -->
+                <div class="msg">
+                    <p>It's OK, but I like movies better.</p> 
+                    <time>
+                        <i class="icon ion-ios-clock-outline"></i>
+                        20:17
+                    </time>
+                </div>
+            </li>
+            <li class="other">
+                <div class="avatar">
+                    <img src="img/27.jpg">
+                </div>
+                <div class="msg">
+                    <p>What kind of movies do you like?</p>
+                    <time>
+                        <i class="icon ion-ios-clock-outline"></i>
+                        10:20
+                    </time>
+                </div>
+            </li>
+            <li class="self">
+                <div class="avatar">
+                    <img src="img/82.jpg">
+                </div>
+                <div class="msg">
+                    <p>All kinds, but especially the comedy.</p>
+                    <time>
+                        <i class="icon ion-ios-clock-outline"></i>
+                        10:20
+                    </time>
+                </div>
+            </li>
+            <li class="other">
+                <div class="avatar">
+                    <img src="img/27.jpg">
+                </div>
+                <div class="msg">
+                    <img src='img/chat/1.jpg' alt=''/>
+                    <time>
+                        <i class="icon ion-ios-clock-outline"></i>
+                        10:20
+                    </time>
+                </div>
+            </li>
+            <li class="self">
+                <div class="avatar">
+                    <img src="img/82.jpg">
+                </div>
+                <div class="msg">
+                    <p>interesting</p>
+                    <time>
+                        <i class="icon ion-ios-clock-outline"></i>
+                        10:20
+                    </time>
+                </div>
+            </li>
+            <li class="other">
+                <div class="avatar">
+                    <img src="img/27.jpg">
+                </div>
+                <div class="msg">
+                    <p>Yeah</p>
+                    <time>
+                        <i class="icon ion-ios-clock-outline"></i>
+                        10:20
+                    </time>
+                </div>
+            </li>
+            <li class="self">
+                <div class="avatar">
+                    <img src="img/82.jpg">
+                </div>
+                <div class="msg">
+                    <img src='img/chat/2.jpg' alt=''/>
+                    <time>
+                        <i class="icon ion-ios-clock-outline"></i>
+                        10:20
+                    </time>
+                </div>
+            </li>
+            <li class="other">
+                <div class="avatar">
+                    <img src="img/27.jpg">
+                </div>
+                <div class="msg">
+                    <p>Who's your favorite actor?</p>
+                    <time>
+                        <i class="icon ion-ios-clock-outline"></i>
+                        10:20
+                    </time>
+                </div>
+            </li>
+            <li class="self">
+                <div class="avatar">
+                    <img src="img/82.jpg">
+                </div>
+                <div class="msg">
+                    <p>Ben Stiller</p>
+                    <time>
+                        <i class="icon ion-ios-clock-outline"></i>
+                        10:20
+                    </time>
+                </div>
+            </li>
+            <li class="other">
+                <div class="avatar">
+                    <img src="img/27.jpg">
+                </div>
+                <div class="msg">
+                    <p>Yeah, he's good. I like him too.</p>
+                    <time>
+                        <i class="icon ion-ios-clock-outline"></i>
+                        10:20
+                    </time>
+                </div>
+            </li>
+        </ol>
+    </ion-content>
+    <!-- *bar-detail / color bar and input -->
+    <ion-footer-bar keyboard-attach class="item-input-inset bar-detail">
+        <label class="item-input-wrapper">
+        <input type="text" placeholder="Type your message" />
+        </label>
+        <a class="button button-icon icon ion-arrow-return-left"></a>
+    </ion-footer-bar>
 </ion-view>

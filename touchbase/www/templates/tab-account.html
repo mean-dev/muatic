@@ -1,9 +1,107 @@
+<!-- (*) assigned classes -->
+
+<style>
+	.content {
+		background-color: white;
+		margin-top: 0px;
+		padding-top: 0px;
+		position: relative;
+	}
+</style>
+
 <ion-view view-title="Account">
-  <ion-content>
-    <ion-list>
-      <ion-toggle  ng-model="settings.enableFriends">
-        Enable Friends
-      </ion-toggle>
-    </ion-list>
-  </ion-content>
+	<ion-nav-buttons side="right">
+        <a class="button button-icon icon ion-ios-gear-outline" href="#/tab/edprofile"></a>
+    </ion-nav-buttons>
+	<ion-content>
+		<!-- *content / container profile -->
+		<div class="content">
+			<ion-list>
+				<!-- item divider -->
+				<div class="item item-divider">
+				    Recent Activity
+					<!-- *view-more / link view more -->
+				    <a class="view-more" href="#">
+				    	view more
+				    	<i class="icon ion-chevron-right"></i>
+				  </a>
+				</div>
+				<a class="item item-avatar">
+					<img src="img/82.jpg">
+      				<p>
+						<!-- *name -->
+      					<span class="name">Carla Harrington</span>
+      					<small>Followed by</small>
+      					<span class="name">Ben Loson</span>
+      				</p>
+					<!-- *activity-time -->
+					<div class="activity-time">2 days ago</div>
+				</a>
+				<a class="item item-avatar">
+					<img src="img/82.jpg">
+      				<p>
+						<span class="name">Carla Harrington</span>
+      					<small>Liked Photo</small>
+      					<span class="name">Ben Loson</span>
+      				</p>
+					<div class="activity-time">2 days ago</div>
+				</a>
+				<a class="item item-avatar">
+					<img src="img/82.jpg">
+      				<p>
+      					<span class="name">Carla Harrington</span>
+      					<small>Followed by</small>
+      					<span class="name">Brad Wix</span>
+      				</p>
+					<div class="activity-time">2 days ago</div>
+				</a>
+				<a class="item item-avatar">
+					<img src="img/82.jpg">
+      				<p>
+      					<span class="name">Carla Harrington</span>
+      					<small>Followed by</small>
+      					<span class="name">Perry Don</span>
+      				</p>
+					<div class="activity-time">2 days ago</div>
+				</a>
+				<!-- item divider -->
+				<div class="item item-divider">
+				    Friends
+				</div>
+				<!-- *friends / container friends -->
+				<ul class="friends">
+					<li><img src="img/48.jpg" alt=""></li>
+					<li><img src="img/27.jpg" alt=""></li>
+					<li><img src="img/9.jpg" alt=""></li>
+					<li><img src="img/1.jpg" alt=""></li>
+					<li><img src="img/88.jpg" alt=""></li>
+					<li><img src="img/78.jpg" alt=""></li>
+					<li><img src="img/4.jpg" alt=""></li>
+					<li><img src="img/82.jpg" alt=""></li>
+					<li><img src="img/92.jpg" alt=""></li>
+					<li><img src="img/2.jpg" alt=""></li>
+				</ul>
+				<!-- item divider -->
+				<div class="item item-divider">
+				    Photos
+				    <a class="view-more" href="#">
+				    	view more
+				    	<i class="icon ion-chevron-right"></i>
+				  	</a>
+				</div>
+				<!-- *photos / container photos -->
+				<ul class="photos">
+					<li><img src="img/photos/1.jpg" alt=""></li>
+					<li><img src="img/photos/2.jpg" alt=""></li>
+					<li><img src="img/photos/3.jpg" alt=""></li>
+					<li><img src="img/photos/4.jpg" alt=""></li>
+					<li><img src="img/photos/5.jpg" alt=""></li>
+					<li><img src="img/photos/6.jpg" alt=""></li>
+					<li><img src="img/photos/4.jpg" alt=""></li>
+					<li><img src="img/photos/5.jpg" alt=""></li>
+					<li><img src="img/photos/6.jpg" alt=""></li>
+				</ul>
+			</ion-list>
+		</div>
+	</ion-content>
 </ion-view>

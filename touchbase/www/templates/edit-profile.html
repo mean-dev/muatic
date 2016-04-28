@@ -1,0 +1,67 @@
+<!-- (*) assigned classes -->
+
+<ion-view view-title="Edit Profile">
+	<ion-nav-buttons side="right">
+        <button class="button button-icon ion-ios-checkmark-empty"></button>
+    </ion-nav-buttons>
+	<ion-content>
+		<!--*edit-profile-bg / background profile -->
+		<div class="edit-profile-bg">
+			<!-- load background image -->
+			<img alt="">
+		</div>
+		<!--*content-edit / container edit profile -->
+		<div class="content-edit">
+			<!--*content-img / container image profile -->
+			<div class="content-img">
+				<!--*img-bg / image profile -->
+				<div class="img-bg">
+					<!--*opt-image / icon add image o cancel image -->
+					<a class="opt-image">
+						<i class="icon ion-ios-plus-outline"></i>
+					</a>
+					<!-- or -->
+					<!-- 
+					<a class="opt-image">
+						<i class="icon ion-ios-close-outline"></i>
+					</a> 
+					-->
+					<!-- load image profile -->
+					<img alt="">
+				</div>
+			</div>
+			<!-- list inset style -->
+			<div class="list list-inset">
+				<label class="item item-input">
+					<input type="text" placeholder="First Name">
+				</label>
+				<label class="item item-input">
+					<input type="text" placeholder="Last Name">
+				</label>
+				<label class="item item-input item-select">
+				    <div class="input-label">
+				    	City
+				    </div>
+				    <select>
+				    	<option>New York</option>
+				      	<option>San Francisco</option>
+				      	<option>London</option>
+				    </select>
+				</label>
+				<label class="item item-input">
+					<textarea placeholder="About me" rows="5"></textarea>
+				</label>
+				<!-- item divider -->
+				<div class="item item-divider">
+				    Account Settings
+				</div>
+				<label class="item item-input">
+				    <input type="text" placeholder="Email">
+				</label>
+				<label class="item item-input">
+				    <input type="password" placeholder="Password">
+				</label>
+			</div>
+		</div>
+	</ion-content>
+</ion-view>

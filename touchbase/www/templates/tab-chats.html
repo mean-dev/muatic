@@ -1,16 +1,70 @@
-<ion-view view-title="Chats">
-  <ion-content>
-    <ion-list>
-      <ion-item class="item-remove-animate item-avatar item-icon-right" ng-repeat="chat in chats" type="item-text-wrap" href="#/tab/chats/{{chat.id}}">
-        <img ng-src="{{chat.face}}">
-        <h2>{{chat.name}}</h2>
-        <p>{{chat.lastText}}</p>
-        <i class="icon ion-chevron-right icon-accessory"></i>
+<!-- (*) assigned classes -->
 
-        <ion-option-button class="button-assertive" ng-click="remove(chat)">
-          Delete
-        </ion-option-button>
-      </ion-item>
-    </ion-list>
-  </ion-content>
+<ion-view view-title="Leads">
+    <ion-content>
+
+        <!-- *input-search -->
+        <div class="list list-inset input-search">
+            <label class="item item-input">
+                <i class="icon ion-search placeholder-icon"></i>
+                <input type="text" placeholder="Search">
+            </label>
+        </div>
+
+        <!-- *item-border-off / quit first border of the list item -->
+        <ion-list class="item-border-off">
+            <ion-item class="item-icon-right" type="item-text-wrap" href="#">
+                <h2>Ben Loson</h2>
+                <p>You on your way?</p>
+                <!-- *time-list / time of activity -->
+                <i class="icon ion-chevron-right icon-accessory"></i>
+                <!-- button options -->
+                <ion-option-button>
+                    <i class="icon ion-ios-close-outline"></i>
+                </ion-option-button>
+            </ion-item>
+            <ion-item class="item-icon-right" type="item-text-wrap" href="#">
+                <h2>Brad Wix</h2>
+                <p>Hey, it\'s me</p>
+                <i class="icon ion-chevron-right icon-accessory"></i>
+                <ion-option-button>
+                    <i class="icon ion-ios-close-outline"></i>
+                </ion-option-button>
+            </ion-item>
+            <ion-item class="item-icon-right" type="item-text-wrap" href="#">
+                <h2>Amy Bradleyson</h2>
+                <p>I should buy a boat</p>
+                <i class="icon ion-chevron-right icon-accessory"></i>
+                <ion-option-button>
+                    <i class="icon ion-ios-close-outline"></i>
+                </ion-option-button>
+            </ion-item>
+            <ion-item class="item-icon-right" type="item-text-wrap" href="#">
+                <h2>
+                    Perry Don
+                </h2>
+                <p>Look at my mukluks!</p>
+                <i class="icon ion-chevron-right icon-accessory"></i>
+                <ion-option-button>
+                    <i class="icon ion-ios-close-outline"></i>
+                </ion-option-button>
+            </ion-item>
+            <ion-item class="item-icon-right" type="item-text-wrap" href="#">
+                <h2>Carla Harrington</h2>
+                <p>This is wicked good ice cream</p>
+                <i class="icon ion-chevron-right icon-accessory"></i>
+                <ion-option-button>
+                    <i class="icon ion-ios-close-outline"></i>
+                </ion-option-button>
+            </ion-item>
+            <ion-item class="item-icon-right" type="item-text-wrap" href="#">
+                <h2>Amy Bradleyson</h2>
+                <p>I should buy a boat</p>
+                <i class="icon ion-chevron-right icon-accessory"></i>
+                <ion-option-button>
+                    <i class="icon ion-ios-close-outline"></i>
+                </ion-option-button>
+            </ion-item>
+        </ion-list>
+    </ion-content>
 </ion-view>
