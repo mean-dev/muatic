@@ -10,9 +10,14 @@
 </style>
 
 <ion-view view-title="Account">
+
 	<ion-nav-buttons side="right">
-        <a class="button button-icon icon ion-ios-gear-outline" href="#/tab/edprofile"></a>
+		<a class="button button-icon icon ion-ios-gear-outline" href="#/tab/edprofile"></a>
     </ion-nav-buttons>
+	<ion-nav-buttons side="left">
+		<a class="button icon-left ion-chevron-left button-clear button-white" ng-click="goBack()">Back</a>
+	</ion-nav-buttons>
+
 	<ion-content>
 		<!-- *content / container profile -->
 		<div class="content">
